@@ -3,116 +3,79 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <title>Ремонт инструмента — Ждановичи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ремонт бензоинструмента в Ждановичах — бензопилы, триммеры, мотокосы</title>
-    <meta name="description" content="Ремонт бензопил, триммеров, мотокос и генераторов в посёлке Ждановичи. Качественно, быстро, с гарантией. Звоните!">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #1c1c1c;
-            color: #fff;
-            padding: 30px 20px;
-            text-align: center;
-        }
-        .section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        .btn {
-            background: #28a745;
-            color: white;
-            padding: 15px 25px;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        .contact {
-            background-color: #eee;
-            padding: 20px;
-            margin-top: 30px;
-            border-radius: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #1c1c1c;
-            color: white;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .gallery img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        iframe {
-            width: 100%;
-            height: 400px;
-            border: 0;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+        header, footer { background-color: #004aad; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #0077cc; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+        h2 { color: #004aad; }
+        .services, .brands { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .service, .brand { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: 250px; text-align: center; }
+        .service img, .brand img { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; }
+        form { display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin: auto; }
+        input, button { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        button { background-color: #004aad; color: white; font-weight: bold; cursor: pointer; }
+        iframe { width: 100%; height: 300px; border: none; margin-top: 20px; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Ремонт бензоинструмента</h1>
-    <p>Быстро, качественно, с гарантией</p>
+    <h1>Мастерская "Ремонт инструмента"</h1>
+    <p>Ждановичи, ул. Кольцевая, 8В | Тел: +375 (44) 742-20-02</p>
 </header>
 
-<div class="section">
-    <h2>Обо мне</h2>
-    <p>Меня зовут Иван. Я занимаюсь ремонтом бензопил, триммеров, мотокос, генераторов и другого бензоинструмента более 5 лет. Работаю с техникой любых брендов.</p>
+<nav>
+    <a href="#services">Услуги</a>
+    <a href="#brands">Бренды</a>
+    <a href="#contact">Контакты</a>
+</nav>
 
-    <h2>Услуги</h2>
-    <ul>
-        <li>Диагностика и ремонт бензопил</li>
-        <li>Замена карбюратора, свечей, шнура стартера</li>
-        <li>Чистка и регулировка карбюратора</li>
-        <li>Ремонт триммеров и мотокос</li>
-        <li>Настройка и обслуживание генераторов</li>
-    </ul>
-
-    <h2>Фотографии</h2>
-    <div class="gallery">
-        <img src="https://cdn.pixabay.com/photo/2017/06/19/19/20/motor-saw-2418672_1280.jpg" alt="Бензопила в ремонте">
-        <img src="https://cdn.pixabay.com/photo/2020/06/29/22/31/gasoline-saw-5354139_1280.jpg" alt="Разобранная бензопила">
-        <img src="https://cdn.pixabay.com/photo/2020/04/20/08/56/chainsaw-5065420_1280.jpg" alt="Ремонт инструмента">
+<section id="services">
+    <h2>Наши услуги</h2>
+    <div class="services">
+        <div class="service">
+            <img src="https://cdn.pixabay.com/photo/2015/10/01/15/55/repair-967099_960_720.jpg" alt="Ремонт бензопил">
+            <h3>Ремонт бензопил</h3>
+            <p>Быстрая и качественная диагностика и ремонт.</p>
+        </div>
+        <div class="service">
+            <img src="https://cdn.pixabay.com/photo/2020/03/10/14/26/tool-4918449_960_720.jpg" alt="Ремонт триммеров">
+            <h3>Ремонт триммеров</h3>
+            <p>Обслуживание и замена деталей.</p>
+        </div>
+        <div class="service">
+            <img src="https://cdn.pixabay.com/photo/2014/09/25/23/36/hammer-461064_960_720.jpg" alt="Генераторы">
+            <h3>Ремонт генераторов</h3>
+            <p>Восстановление и настройка генераторов.</p>
+        </div>
     </div>
+</section>
 
-    <div class="contact">
-        <h2>Контакты</h2>
-        <p>Адрес: посёлок Ждановичи, улица Кольцевая, 8В</p>
-        <p>Телефон: +7 (900) 000-00-00</p>
-        <p>WhatsApp / Telegram: @remontmaster</p>
-        <p>Email: remont@pochta.ru</p>
-        
-        <iframe 
-            src="https://www.google.com/maps?q=Ждановичи,+Кольцевая+8В&output=embed" 
-            allowfullscreen 
-            loading="lazy">
-        </iframe>
+<section id="brands">
+    <h2>Мы работаем с брендами</h2>
+    <div class="brands">
+        <div class="brand"><img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Stihl_logo.svg" alt="Stihl"></div>
+        <div class="brand"><img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Husqvarna_logo.svg" alt="Husqvarna"></div>
+        <div class="brand"><img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Makita_Logo.svg" alt="Makita"></div>
     </div>
+</section>
 
-    <p style="text-align:center; margin-top: 30px;">
-        <a class="btn" href="tel:+79000000000">Позвонить сейчас</a>
-    </p>
-</div>
+<section id="contact">
+    <h2>Свяжитесь с нами</h2>
+    <form>
+        <input type="text" name="name" placeholder="Ваше имя">
+        <input type="tel" name="phone" placeholder="Ваш телефон">
+        <button type="submit">Отправить</button>
+    </form>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A64f1b3c80d3918972383a135f93939fead68a02db64d4d8d4a8fba87ed49a7b4&amp;source=constructor"></iframe>
+</section>
 
 <footer>
-    © 2025 Ремонт бензоинструмента. Все права защищены.
+    <p>&copy; 2025 Ремонт инструмента, Ждановичи</p>
 </footer>
 
 </body>
